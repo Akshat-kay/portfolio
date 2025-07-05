@@ -6,7 +6,7 @@
   <title>Akshat | Portfolio</title>
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" href="akshatdev.png">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;600;800&display=swap" rel="stylesheet">
   <style>
     html {
       scroll-behavior: smooth;
@@ -14,6 +14,16 @@
   </style>
 </head>
 <body>
+  <!-- Animated Background Figures -->
+  <div class="animated-figures">
+    <div class="figure figure-1"></div>
+    <div class="figure figure-2"></div>
+    <div class="figure figure-3"></div>
+    <div class="figure figure-4"></div>
+    <div class="figure figure-5"></div>
+    <div class="figure figure-6"></div>
+  </div>
+
   <!-- Navigation -->
   <nav class="transparent-nav">
     <div class="logo">
@@ -397,7 +407,82 @@
       </div>
     </div>
   </section>
-  
+
+  <!-- Contact Section -->
+  <section id="contact" class="section contact-section">
+    <h2 class="section-heading">Get In Touch</h2>
+    <p class="section-subheading">Let's connect and discuss how we can work together on your next project.</p>
+    
+    <div class="contact-container">
+        <div class="contact-cards">
+            <!-- GitHub Card -->
+            <a href="https://github.com/akshat-kay" target="_blank" class="contact-card">
+                <div class="card-logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                    </svg>
+                </div>
+                <div class="card-text">GitHub</div>
+            </a>
+
+            <!-- LinkedIn Card -->
+            <a href="https://linkedin.com/in/786akshatk" target="_blank" class="contact-card">
+                <div class="card-logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                        <rect x="2" y="9" width="4" height="12"></rect>
+                        <circle cx="4" cy="4" r="2"></circle>
+                    </svg>
+                </div>
+                <div class="card-text">LinkedIn</div>
+            </a>
+
+            <!-- Email Card -->
+            <a href="mailto:akshatkashyap786@gmail.com" class="contact-card">
+                <div class="card-logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                </div>
+                <div class="card-text">Email</div>
+            </a>
+        </div>
+    </div>
+
+    <div class="contact-form-container">
+        <h3>Send me a message</h3>
+        <form class="contact-form">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            
+            <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Akshat Kashyap. All rights reserved.</p>
+  </footer>
+
   <script>
   function showContent(contentId) {
     // Hide all tab contents
@@ -418,309 +503,88 @@
     // Activate the clicked tab button
     event.currentTarget.classList.add('active');
   }
-  </script>
-<!-- Contact Section -->
-<div class="contact-container">
-    <h1>Contact</h1>
-    <div class="contact-cards">
-        <!-- GitHub Card -->
-        <a href="https://github.com/akshat-kay" target="_blank" class="contact-card">
-            <div class="card-logo">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                </svg>
-            </div>
-            <div class="card-text">GitHub</div>
-        </a>
 
-        <!-- LinkedIn Card -->
-        <a href="https://linkedin.com/in/786akshatk" target="_blank" class="contact-card">
-            <div class="card-logo">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-                    <rect x="2" y="9" width="4" height="12"></rect>
-                    <circle cx="4" cy="4" r="2"></circle>
-                </svg>
-            </div>
-            <div class="card-text">LinkedIn</div>
-        </a>
-
-        <!-- Email Card -->
-        <a href="mailto:akshatkashyap786@gmail.com" class="contact-card">
-            <div class="card-logo">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                    <polyline points="22,6 12,13 2,6"></polyline>
-                </svg>
-            </div>
-            <div class="card-text">Email</div>
-        </a>
-    </div>
-</div>
-
-<style>
-    .contact-container {
-        font-family: 'Arial', sans-serif;
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 20px;
-        text-align: center;
-    }
-
-    .contact-container h1 {
-        font-size: 2rem;
-        margin-bottom: 2rem;
-        color: #333;
-    }
-
-    .contact-cards {
-        display: flex;
-        justify-content: center;
-        gap: 2rem;
-        flex-wrap: wrap;
-    }
-
-    .contact-card {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 120px;
-        height: 120px;
-        background: white;
-        border-radius: 12px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        text-decoration: none;
-        color: #333;
-        transition: all 0.3s ease;
-        padding: 1rem;
-    }
-
-    .contact-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-    }
-
-    .card-logo {
-        width: 48px;
-        height: 48px;
-        margin-bottom: 1rem;
-        color: #555;
-    }
-
-    .card-text {
-        font-weight: 600;
-    }
-
-    /* GitHub specific hover effect */
-    .contact-card:nth-child(1):hover {
-        background: #f5f5f5;
-    }
-    .contact-card:nth-child(1):hover .card-logo {
-        color: #333;
-    }
-
-    /* LinkedIn specific hover effect */
-    .contact-card:nth-child(2):hover {
-        background: #f0f7ff;
-    }
-    .contact-card:nth-child(2):hover .card-logo {
-        color: #0a66c2;
-    }
-
-    /* Email specific hover effect */
-    .contact-card:nth-child(3):hover {
-        background: #fff0f0;
-    }
-    .contact-card:nth-child(3):hover .card-logo {
-        color: #d44638;
-    }
-</style>
-
-<div class="contact-form-container">
-    <h2>Contact Me</h2>
-    <form class="contact-form">
-        <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required>
-        </div>
-        
-        <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
-        </div>
-        
-        <div class="form-group">
-            <label for="subject">Subject</label>
-            <input type="text" id="subject" name="subject" required>
-        </div>
-        
-        <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-        </div>
-        
-        <button type="submit" class="submit-btn">Send Message</button>
-    </form>
-</div>
-
-<style>
-    .contact-form-container {
-        max-width: 600px;
-        margin: 0 auto;
-        padding: 2rem;
-        font-family: 'Arial', sans-serif;
-    }
-    
-    .contact-form-container h2 {
-        font-size: 1.8rem;
-        margin-bottom: 1.5rem;
-        color: #333;
-        text-align: center;
-    }
-    
-    .contact-form {
-        display: flex;
-        flex-direction: column;
-        gap: 1.2rem;
-    }
-    
-    .form-group {
-        display: flex;
-        flex-direction: column;
-        gap: 0.5rem;
-    }
-    
-    .form-group label {
-        font-weight: 500;
-        color: #555;
-    }
-    
-    .form-group input,
-    .form-group textarea {
-        padding: 0.8rem;
-        border: 1px solid #ddd;
-        border-radius: 6px;
-        font-size: 1rem;
-        transition: border 0.3s ease;
-    }
-    
-    .form-group input:focus,
-    .form-group textarea:focus {
-        outline: none;
-        border-color: #0066cc;
-        box-shadow: 0 0 0 2px rgba(0, 102, 204, 0.1);
-    }
-    
-    .submit-btn {
-        background-color: #0066cc;
-        color: white;
-        border: none;
-        padding: 0.8rem 1.5rem;
-        font-size: 1rem;
-        border-radius: 6px;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-        margin-top: 0.5rem;
-    }
-    
-    .submit-btn:hover {
-        background-color: #0052a3;
-    }
-</style>
-
-<script>
-    document.querySelector('.contact-form').addEventListener('submit', function(e) {
-        e.preventDefault();
-        
-        // Get form values
-        const name = document.getElementById('name').value;
-        const email = document.getElementById('email').value;
-        const subject = document.getElementById('subject').value;
-        const message = document.getElementById('message').value;
-        
-        // Here you would typically send the data to a server
-        console.log('Form submitted:', { name, email, subject, message });
-        
-        // Show success message
-        alert('Message sent successfully!');
-        this.reset();
-    });
-</script>
-
-<footer>
-  <p>&copy; 2025 akshat kashyap. All rights reserved.</p>
-</footer>
-
-<script>
-  const words = ["DevOps Engineer", "Solutions Architect", "Programmer", "Cloud Solution Architect"];
-  let i = 0, j = 0;
-  let currentWord = '';
-  let isDeleting = false;
-  const speed = 100;
-
-  function type() {
-    const typewriter = document.getElementById('typewriter');
-    currentWord = words[i];
-    typewriter.innerHTML = isDeleting ? currentWord.substring(0, j--) : currentWord.substring(0, j++);
-    if (!isDeleting && j === currentWord.length + 1) {
-      isDeleting = true;
-      setTimeout(type, 800);
-    } else if (isDeleting && j === 0) {
-      isDeleting = false;
-      i = (i + 1) % words.length;
-      setTimeout(type, 400);
-    } else {
-      setTimeout(type, speed);
-    }
-  }
-  document.addEventListener('DOMContentLoaded', () => type());
-</script>
-
-<script>
-  const skills = document.querySelectorAll('.skill-box');
-
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.style.opacity = 1;
-        entry.target.style.animationPlayState = 'running';
-      }
-    });
-  }, {
-    threshold: 0.2
-  });
-
-  skills.forEach(skill => {
-    skill.style.opacity = 0;
-    skill.style.animationPlayState = 'paused';
-    observer.observe(skill);
-  });
-</script>
-
-<script>
-  function showToggle(type) {
-    const buttons = document.querySelectorAll(".tab-btn");
-    const tabs = document.querySelectorAll(".tab-content");
-
-    buttons.forEach(btn => {
-      btn.classList.remove("active");
-    });
-
-    tabs.forEach(tab => {
-      tab.classList.remove("active");
-    });
-
-    document.getElementById(type).classList.add("active");
-    document.querySelector(tab-btn[onclick="showToggle('${type}')"]).classList.add("active");
-  }
-</script>
-
-<script>
-  function toggleDetails(header) {
-    const card = header.closest('.exp-card');
+  function toggleDetails(element) {
+    const card = element.closest('.exp-card');
     card.classList.toggle('open');
   }
-</script>
+
+  // Typewriter effect
+  const typewriterElement = document.getElementById('typewriter');
+  const texts = ['DevOps Engineer', 'Cloud Architect', 'Automation Specialist', 'Problem Solver'];
+  let textIndex = 0;
+  let charIndex = 0;
+  let isDeleting = false;
+
+  function typeWriter() {
+    const currentText = texts[textIndex];
+    
+    if (isDeleting) {
+      typewriterElement.textContent = currentText.substring(0, charIndex - 1);
+      charIndex--;
+    } else {
+      typewriterElement.textContent = currentText.substring(0, charIndex + 1);
+      charIndex++;
+    }
+
+    let typeSpeed = isDeleting ? 100 : 150;
+
+    if (!isDeleting && charIndex === currentText.length) {
+      typeSpeed = 2000; // Pause at end
+      isDeleting = true;
+    } else if (isDeleting && charIndex === 0) {
+      isDeleting = false;
+      textIndex = (textIndex + 1) % texts.length;
+      typeSpeed = 500; // Pause before starting next word
+    }
+
+    setTimeout(typeWriter, typeSpeed);
+  }
+
+  // Start typewriter effect
+  typeWriter();
+
+  // Smooth scrolling for navigation links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        target.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }
+    });
+  });
+
+  // Contact form handling
+  document.querySelector('.contact-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    // Get form values
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const subject = document.getElementById('subject').value;
+    const message = document.getElementById('message').value;
+    
+    // Here you would typically send the data to a server
+    console.log('Form submitted:', { name, email, subject, message });
+    
+    // Show success message
+    alert('Message sent successfully!');
+    this.reset();
+  });
+
+  // Navbar scroll effect
+  window.addEventListener('scroll', function() {
+    const nav = document.querySelector('.transparent-nav');
+    if (window.scrollY > 100) {
+      nav.classList.add('scrolled');
+    } else {
+      nav.classList.remove('scrolled');
+    }
+  });
+  </script>
 </body>
 </html>
